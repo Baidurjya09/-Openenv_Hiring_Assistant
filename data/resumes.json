@@ -1,0 +1,196 @@
+{
+  "easy": [
+    {
+      "id": "c_easy_001",
+      "name": "Alice Johnson",
+      "skills": ["Python", "Git", "Django", "REST APIs"],
+      "experience_years": 2,
+      "summary": "Python developer with 2 years of experience building Django web apps and REST APIs. Proficient with Git."
+    },
+    {
+      "id": "c_easy_002",
+      "name": "Bob Smith",
+      "skills": ["Java", "Maven", "Spring Boot"],
+      "experience_years": 3,
+      "summary": "Java backend developer with 3 years of experience in Spring Boot. No Python experience."
+    },
+    {
+      "id": "c_easy_003",
+      "name": "Carol White",
+      "skills": ["HTML", "CSS", "Photoshop"],
+      "experience_years": 1,
+      "summary": "Frontend designer with 1 year of experience. Focuses on UI/UX design, no programming background."
+    },
+    {
+      "id": "c_easy_004",
+      "name": "David Lee",
+      "skills": ["Excel", "PowerPoint", "SQL"],
+      "experience_years": 4,
+      "summary": "Business analyst with 4 years of experience. Strong in data analysis but no software development skills."
+    }
+  ],
+  "management": [
+    {
+      "id": "c_mgmt_001",
+      "name": "Sarah Johnson",
+      "skills": ["Product Strategy", "Roadmap Planning", "Stakeholder Management", "Agile", "SQL"],
+      "experience_years": 4,
+      "summary": "Product manager with 4 years leading product development. MBA graduate with strong analytical skills and experience working with engineering teams."
+    },
+    {
+      "id": "c_mgmt_002",
+      "name": "Mike Chen",
+      "skills": ["Project Management", "Agile", "Scrum", "Communication"],
+      "experience_years": 3,
+      "summary": "Project manager with 3 years experience. Business school graduate strong in Agile but limited product strategy experience."
+    },
+    {
+      "id": "c_mgmt_003",
+      "name": "Lisa Brown",
+      "skills": ["Python", "Git", "Django"],
+      "experience_years": 5,
+      "summary": "Software engineer with 5 years experience. Computer science graduate with no product management background."
+    },
+    {
+      "id": "c_mgmt_004",
+      "name": "Tom Wilson",
+      "skills": ["Marketing Strategy", "Campaign Management", "Analytics"],
+      "experience_years": 4,
+      "summary": "Marketing manager with 4 years experience. Marketing degree but no product management experience."
+    }
+  ],
+  "marketing": [
+    {
+      "id": "c_mkt_001",
+      "name": "Emily Davis",
+      "skills": ["Marketing Strategy", "Campaign Management", "Analytics", "SEO", "Social Media"],
+      "experience_years": 4,
+      "summary": "Marketing manager with 4 years driving growth through data-driven campaigns. Marketing degree with strong analytical skills."
+    },
+    {
+      "id": "c_mkt_002",
+      "name": "Frank Anderson",
+      "skills": ["Content Writing", "SEO", "Social Media"],
+      "experience_years": 2,
+      "summary": "Content writer with 2 years experience. English major strong in content creation but limited strategy and analytics experience."
+    },
+    {
+      "id": "c_mkt_003",
+      "name": "Grace Lee",
+      "skills": ["Sales", "CRM", "Negotiation"],
+      "experience_years": 5,
+      "summary": "Sales professional with 5 years experience. Business degree but no marketing background."
+    },
+    {
+      "id": "c_mkt_004",
+      "name": "Henry Kim",
+      "skills": ["Graphic Design", "Photoshop", "Illustrator"],
+      "experience_years": 3,
+      "summary": "Graphic designer with 3 years experience. Design degree but no marketing strategy or analytics experience."
+    }
+  ],
+  "business": [
+    {
+      "id": "c_bus_001",
+      "name": "Jennifer Martinez",
+      "skills": ["Excel", "SQL", "Data Analysis", "Business Requirements", "Tableau"],
+      "experience_years": 3,
+      "summary": "Business analyst with 3 years analyzing data and creating reports. Business administration degree with strong analytical skills."
+    },
+    {
+      "id": "c_bus_002",
+      "name": "Kevin White",
+      "skills": ["Excel", "PowerPoint", "Communication"],
+      "experience_years": 1,
+      "summary": "Recent business graduate with 1 year experience. Strong in Excel but limited SQL and data analysis experience."
+    },
+    {
+      "id": "c_bus_003",
+      "name": "Laura Garcia",
+      "skills": ["Python", "SQL", "Machine Learning"],
+      "experience_years": 4,
+      "summary": "Data scientist with 4 years experience. Computer science degree but no business requirements or Excel experience."
+    },
+    {
+      "id": "c_bus_004",
+      "name": "Mark Johnson",
+      "skills": ["Accounting", "QuickBooks", "Excel"],
+      "experience_years": 5,
+      "summary": "Accountant with 5 years experience. Accounting degree but no data analysis or SQL experience."
+    }
+  ],
+  "medium": [
+    {
+      "id": "c_med_001",
+      "name": "Emma Davis",
+      "skills": ["JavaScript", "React", "Node.js", "SQL", "TypeScript"],
+      "experience_years": 4,
+      "summary": "Full stack developer with 4 years of experience. Strong in React and Node.js, uses TypeScript daily, comfortable with SQL databases."
+    },
+    {
+      "id": "c_med_002",
+      "name": "Frank Miller",
+      "skills": ["JavaScript", "React", "SQL", "CSS"],
+      "experience_years": 3,
+      "summary": "Frontend-leaning developer with 3 years of experience. Solid React skills and SQL knowledge, limited Node.js backend experience."
+    },
+    {
+      "id": "c_med_003",
+      "name": "Grace Kim",
+      "skills": ["Node.js", "SQL", "Docker", "AWS", "Python"],
+      "experience_years": 5,
+      "summary": "Backend engineer with 5 years of experience. Expert in Node.js and SQL, strong DevOps skills with Docker and AWS. Limited React experience."
+    },
+    {
+      "id": "c_med_004",
+      "name": "Henry Brown",
+      "skills": ["PHP", "MySQL", "JavaScript", "jQuery"],
+      "experience_years": 6,
+      "summary": "Web developer with 6 years of experience in PHP and MySQL. Uses JavaScript/jQuery but not modern React or Node.js."
+    },
+    {
+      "id": "c_med_005",
+      "name": "Iris Chen",
+      "skills": ["JavaScript", "React", "Node.js", "SQL", "Docker", "AWS"],
+      "experience_years": 5,
+      "summary": "Senior full stack engineer with 5 years of experience. Covers all required and preferred skills including Docker and AWS."
+    }
+  ],
+  "hard": [
+    {
+      "id": "c_hard_001",
+      "name": "Jack Wilson",
+      "skills": ["Python", "PyTorch", "Machine Learning", "MLOps", "Kubernetes", "CUDA"],
+      "experience_years": 7,
+      "summary": "Senior ML engineer with 7 years of experience. Deep expertise in PyTorch, production ML pipelines, MLOps, Kubernetes orchestration, and GPU programming with CUDA."
+    },
+    {
+      "id": "c_hard_002",
+      "name": "Karen Martinez",
+      "skills": ["Python", "PyTorch", "Machine Learning", "MLOps", "LLMs", "Spark"],
+      "experience_years": 6,
+      "summary": "ML engineer with 6 years of experience. Strong in PyTorch and MLOps, has worked on LLM fine-tuning projects and big data with Spark."
+    },
+    {
+      "id": "c_hard_003",
+      "name": "Leo Thompson",
+      "skills": ["Python", "TensorFlow", "Machine Learning", "MLOps", "Docker"],
+      "experience_years": 5,
+      "summary": "ML engineer with 5 years of experience. Uses TensorFlow instead of PyTorch, solid MLOps background, meets minimum experience requirement."
+    },
+    {
+      "id": "c_hard_004",
+      "name": "Mia Garcia",
+      "skills": ["Python", "PyTorch", "Machine Learning", "Research", "NLP"],
+      "experience_years": 6,
+      "summary": "ML researcher with 6 years of experience. Strong in PyTorch and NLP research but lacks MLOps and production deployment experience."
+    },
+    {
+      "id": "c_hard_005",
+      "name": "Nathan Park",
+      "skills": ["Python", "Scikit-learn", "Machine Learning", "SQL", "Tableau"],
+      "experience_years": 8,
+      "summary": "Data scientist with 8 years of experience. Strong in classical ML with scikit-learn but no deep learning or MLOps experience."
+    }
+  ]
+}

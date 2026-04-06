@@ -1,0 +1,55 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ai-hiring-assistant"
+version = "1.0.0"
+description = "A recruiter simulation environment for OpenEnv where AI agents screen job candidates"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [
+    {name = "OpenEnv Hackathon Submission"}
+]
+keywords = ["hiring", "nlp", "reasoning", "evaluation", "openenv", "ai", "recruitment"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+
+dependencies = [
+    "openai>=1.14.0",
+    "pydantic>=2.0.0",
+    "pyyaml>=6.0",
+    "openenv-core>=0.2.0",
+    "fastapi>=0.104.0",
+    "uvicorn>=0.24.0",
+]
+
+[project.scripts]
+server = "server.app:main"
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "black>=23.0.0",
+    "mypy>=1.0.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/openenv/ai-hiring-assistant"
+Repository = "https://github.com/openenv/ai-hiring-assistant"
+Documentation = "https://github.com/openenv/ai-hiring-assistant#readme"
+
+[tool.setuptools]
+packages = ["env", "models", "graders", "tasks"]
+
+[tool.setuptools.package-data]
+"*" = ["*.json", "*.yaml", "*.yml"]

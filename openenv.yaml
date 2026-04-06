@@ -1,0 +1,94 @@
+name: ai-hiring-assistant
+version: "1.0.0"
+description: >
+  A recruiter simulation environment where an AI agent screens job candidates
+  based on job descriptions and resumes. The agent must select the best-fit
+  candidates from a pool, evaluated by a deterministic F1-based grader.
+
+entry_point: env.hiring_env:HiringEnv
+
+tasks:
+  - id: task_easy_001
+    difficulty: easy
+    description: >
+      One clearly correct candidate. The job requires Python and Git with 1+ year
+      of experience. Only one candidate matches all required skills.
+    correct_candidates: ["c_easy_001"]
+
+  - id: task_medium_001
+    difficulty: medium
+    description: >
+      Multiple reasonable candidates for a Full Stack Engineer role requiring
+      JavaScript, React, Node.js, and SQL. Two candidates satisfy all required
+      and several preferred skills.
+    correct_candidates: ["c_med_001", "c_med_005"]
+
+  - id: task_hard_001
+    difficulty: hard
+    description: >
+      Five similar ML candidates for a Senior ML Engineer role. Requires careful
+      reasoning over required skills (PyTorch, MLOps), preferred skills (Kubernetes,
+      Spark, LLMs, CUDA), and experience thresholds.
+    correct_candidates: ["c_hard_001", "c_hard_002"]
+
+  - id: task_management_001
+    difficulty: management
+    description: >
+      Product Manager role requiring MBA background, Agile/Scrum expertise, and
+      product strategy skills. Tests ability to match management candidates with
+      leadership positions.
+    correct_candidates: ["c_mgmt_001"]
+
+  - id: task_marketing_001
+    difficulty: marketing
+    description: >
+      Marketing Manager role requiring digital marketing, SEO/SEM, and analytics
+      skills. Tests ability to evaluate marketing professionals with diverse skill sets.
+    correct_candidates: ["c_mkt_001"]
+
+  - id: task_business_001
+    difficulty: business
+    description: >
+      Business Analyst role requiring SQL, Excel, and business intelligence skills.
+      Tests ability to match business-focused candidates with analytical positions.
+    correct_candidates: ["c_biz_001"]
+
+observation_space:
+  type: object
+  properties:
+    job_description:
+      type: object
+      description: Job posting with title, required/preferred skills, and experience threshold.
+    resumes:
+      type: array
+      description: List of candidate profiles with skills, experience, and summary.
+    task_id:
+      type: string
+    difficulty:
+      type: string
+      enum: [easy, medium, hard, management, marketing, business]
+
+action_space:
+  type: object
+  properties:
+    selected_candidates:
+      type: array
+      items:
+        type: string
+      description: List of candidate IDs the agent selects for the role.
+
+reward:
+  type: float
+  range: [0.0, 1.0]
+  description: >
+    F1 score computed from precision (correct / selected) and recall
+    (correct / total_correct). Penalizes both false positives and missed candidates.
+    Score of 1.0 requires selecting exactly the correct set of candidates.
+
+metadata:
+  author: OpenEnv Hackathon Submission
+  tags: [hiring, nlp, reasoning, evaluation]
+  resource_requirements:
+    cpu: "2 vCPU"
+    memory: "8GB RAM"
+    inference_time: "< 20 minutes"

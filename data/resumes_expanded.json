@@ -1,0 +1,318 @@
+{
+  "easy": [
+    {
+      "id": "c_easy_001",
+      "name": "Alice Johnson",
+      "skills": ["Python", "Git", "Django", "REST APIs"],
+      "experience_years": 2,
+      "summary": "Python developer with 2 years of experience building Django web apps and REST APIs. Proficient with Git."
+    },
+    {
+      "id": "c_easy_002",
+      "name": "Bob Smith",
+      "skills": ["Java", "Maven", "Spring Boot"],
+      "experience_years": 3,
+      "summary": "Java backend developer with 3 years of experience in Spring Boot. No Python experience."
+    },
+    {
+      "id": "c_easy_003",
+      "name": "Carol White",
+      "skills": ["HTML", "CSS", "Photoshop"],
+      "experience_years": 1,
+      "summary": "Frontend designer with 1 year of experience. Focuses on UI/UX design, no programming background."
+    },
+    {
+      "id": "c_easy_004",
+      "name": "David Lee",
+      "skills": ["Excel", "PowerPoint", "SQL"],
+      "experience_years": 4,
+      "summary": "Business analyst with 4 years of experience. Strong in data analysis but no software development skills."
+    }
+  ],
+  "medium": [
+    {
+      "id": "c_med_001",
+      "name": "Emma Davis",
+      "skills": ["JavaScript", "React", "Node.js", "SQL", "TypeScript"],
+      "experience_years": 4,
+      "summary": "Full stack developer with 4 years of experience. Strong in React and Node.js, uses TypeScript daily, comfortable with SQL databases."
+    },
+    {
+      "id": "c_med_002",
+      "name": "Frank Miller",
+      "skills": ["JavaScript", "React", "SQL", "CSS"],
+      "experience_years": 3,
+      "summary": "Frontend-leaning developer with 3 years of experience. Solid React skills and SQL knowledge, limited Node.js backend experience."
+    },
+    {
+      "id": "c_med_003",
+      "name": "Grace Kim",
+      "skills": ["Node.js", "SQL", "Docker", "AWS", "Python"],
+      "experience_years": 5,
+      "summary": "Backend engineer with 5 years of experience. Expert in Node.js and SQL, strong DevOps skills with Docker and AWS. Limited React experience."
+    },
+    {
+      "id": "c_med_004",
+      "name": "Henry Brown",
+      "skills": ["PHP", "MySQL", "JavaScript", "jQuery"],
+      "experience_years": 6,
+      "summary": "Web developer with 6 years of experience in PHP and MySQL. Uses JavaScript/jQuery but not modern React or Node.js."
+    },
+    {
+      "id": "c_med_005",
+      "name": "Iris Chen",
+      "skills": ["JavaScript", "React", "Node.js", "SQL", "Docker", "AWS"],
+      "experience_years": 5,
+      "summary": "Senior full stack engineer with 5 years of experience. Covers all required and preferred skills including Docker and AWS."
+    }
+  ],
+  "hard": [
+    {
+      "id": "c_hard_001",
+      "name": "Jack Wilson",
+      "skills": ["Python", "PyTorch", "Machine Learning", "MLOps", "Kubernetes", "CUDA"],
+      "experience_years": 7,
+      "summary": "Senior ML engineer with 7 years of experience. Deep expertise in PyTorch, production ML pipelines, MLOps, Kubernetes orchestration, and GPU programming with CUDA."
+    },
+    {
+      "id": "c_hard_002",
+      "name": "Karen Martinez",
+      "skills": ["Python", "PyTorch", "Machine Learning", "MLOps", "LLMs", "Spark"],
+      "experience_years": 6,
+      "summary": "ML engineer with 6 years of experience. Strong in PyTorch and MLOps, has worked on LLM fine-tuning projects and big data with Spark."
+    },
+    {
+      "id": "c_hard_003",
+      "name": "Leo Thompson",
+      "skills": ["Python", "TensorFlow", "Machine Learning", "MLOps", "Docker"],
+      "experience_years": 5,
+      "summary": "ML engineer with 5 years of experience. Uses TensorFlow instead of PyTorch, solid MLOps background, meets minimum experience requirement."
+    },
+    {
+      "id": "c_hard_004",
+      "name": "Mia Garcia",
+      "skills": ["Python", "PyTorch", "Machine Learning", "Research", "NLP"],
+      "experience_years": 6,
+      "summary": "ML researcher with 6 years of experience. Strong in PyTorch and NLP research but lacks MLOps and production deployment experience."
+    },
+    {
+      "id": "c_hard_005",
+      "name": "Nathan Park",
+      "skills": ["Python", "Scikit-learn", "Machine Learning", "SQL", "Tableau"],
+      "experience_years": 8,
+      "summary": "Data scientist with 8 years of experience. Strong in classical ML with scikit-learn but no deep learning or MLOps experience."
+    }
+  ],
+  "product_management": [
+    {
+      "id": "c_pm_001",
+      "name": "Sarah Johnson",
+      "skills": ["Product Strategy", "Roadmap Planning", "Stakeholder Management", "Data Analysis", "Agile", "SQL"],
+      "experience_years": 4,
+      "summary": "Product manager with 4 years leading product development. Strong analytical skills and experience working with engineering teams."
+    },
+    {
+      "id": "c_pm_002",
+      "name": "Mike Chen",
+      "skills": ["Project Management", "Agile", "Scrum", "Communication", "Stakeholder Management"],
+      "experience_years": 3,
+      "summary": "Project manager with 3 years experience. Strong in Agile but limited product strategy and roadmap planning experience."
+    },
+    {
+      "id": "c_pm_003",
+      "name": "Lisa Brown",
+      "skills": ["Python", "Git", "Django", "SQL"],
+      "experience_years": 5,
+      "summary": "Software engineer with 5 years experience. Strong technical skills but no product management background."
+    },
+    {
+      "id": "c_pm_004",
+      "name": "Tom Wilson",
+      "skills": ["Marketing Strategy", "Campaign Management", "Analytics"],
+      "experience_years": 4,
+      "summary": "Marketing manager with 4 years experience. Strong in marketing but no product management experience."
+    },
+    {
+      "id": "c_pm_005",
+      "name": "Rachel Green",
+      "skills": ["Product Strategy", "Roadmap Planning", "Stakeholder Management", "Data Analysis", "Team Leadership", "SQL", "Python"],
+      "experience_years": 6,
+      "summary": "Senior product manager with 6 years experience. Technical background with strong leadership and analytical skills."
+    }
+  ],
+  "marketing": [
+    {
+      "id": "c_mkt_001",
+      "name": "Emily Davis",
+      "skills": ["Marketing Strategy", "Campaign Management", "Analytics", "Communication", "SEO", "Social Media"],
+      "experience_years": 4,
+      "summary": "Marketing manager with 4 years driving growth through data-driven campaigns. Strong in digital marketing and analytics."
+    },
+    {
+      "id": "c_mkt_002",
+      "name": "Tom Anderson",
+      "skills": ["Content Writing", "SEO", "Social Media", "Communication"],
+      "experience_years": 2,
+      "summary": "Content writer with 2 years experience. Strong in content creation but limited strategy and campaign management experience."
+    },
+    {
+      "id": "c_mkt_003",
+      "name": "Jessica Lee",
+      "skills": ["Social Media", "Content Writing", "Canva", "Email Marketing"],
+      "experience_years": 1,
+      "summary": "Marketing coordinator with 1 year experience managing social media and creating content."
+    },
+    {
+      "id": "c_mkt_004",
+      "name": "David Kim",
+      "skills": ["Sales", "CRM", "Negotiation", "Communication"],
+      "experience_years": 5,
+      "summary": "Sales professional with 5 years experience. Strong in sales but no marketing background."
+    },
+    {
+      "id": "c_mkt_005",
+      "name": "Amanda White",
+      "skills": ["Marketing Strategy", "Campaign Management", "Analytics", "Communication", "Team Leadership", "Budget Management"],
+      "experience_years": 8,
+      "summary": "Head of marketing with 8 years experience leading marketing teams and driving company growth."
+    }
+  ],
+  "sales": [
+    {
+      "id": "c_sales_001",
+      "name": "Robert Taylor",
+      "skills": ["Sales Strategy", "CRM", "Negotiation", "Pipeline Management", "Salesforce", "B2B Sales"],
+      "experience_years": 5,
+      "summary": "Sales manager with 5 years leading sales teams and driving revenue growth. Strong in B2B sales and CRM."
+    },
+    {
+      "id": "c_sales_002",
+      "name": "Jennifer Moore",
+      "skills": ["Cold Calling", "Negotiation", "CRM", "Communication"],
+      "experience_years": 2,
+      "summary": "Sales representative with 2 years experience. Strong in cold calling but limited management experience."
+    },
+    {
+      "id": "c_sales_003",
+      "name": "Chris Johnson",
+      "skills": ["Marketing Strategy", "Campaign Management", "Analytics"],
+      "experience_years": 4,
+      "summary": "Marketing manager with 4 years experience. Strong in marketing but no sales background."
+    }
+  ],
+  "hr": [
+    {
+      "id": "c_hr_001",
+      "name": "Michelle Brown",
+      "skills": ["Recruitment", "Employee Relations", "HR Policies", "Communication", "HRIS", "Performance Management"],
+      "experience_years": 4,
+      "summary": "HR manager with 4 years overseeing recruitment and employee relations. Strong interpersonal and organizational skills."
+    },
+    {
+      "id": "c_hr_002",
+      "name": "Kevin Davis",
+      "skills": ["Recruitment", "Communication", "Interviewing"],
+      "experience_years": 2,
+      "summary": "HR coordinator with 2 years experience in recruitment. Limited experience with HR policies and employee relations."
+    },
+    {
+      "id": "c_hr_003",
+      "name": "Laura Wilson",
+      "skills": ["Project Management", "Communication", "Training"],
+      "experience_years": 3,
+      "summary": "Project manager with 3 years experience. Strong in training but no HR background."
+    }
+  ],
+  "finance": [
+    {
+      "id": "c_fin_001",
+      "name": "Andrew Martinez",
+      "skills": ["Financial Modeling", "Excel", "Data Analysis", "Accounting", "SQL", "Tableau"],
+      "experience_years": 3,
+      "summary": "Financial analyst with 3 years performing financial modeling and analysis. Strong Excel and analytical skills."
+    },
+    {
+      "id": "c_fin_002",
+      "name": "Sophia Garcia",
+      "skills": ["Accounting", "Excel", "QuickBooks"],
+      "experience_years": 2,
+      "summary": "Accountant with 2 years experience. Strong in accounting but limited financial modeling experience."
+    },
+    {
+      "id": "c_fin_003",
+      "name": "Daniel Lee",
+      "skills": ["SQL", "Python", "Data Analysis", "Tableau"],
+      "experience_years": 3,
+      "summary": "Data analyst with 3 years experience. Strong technical skills but no accounting or financial modeling background."
+    }
+  ],
+  "design": [
+    {
+      "id": "c_des_001",
+      "name": "Olivia Taylor",
+      "skills": ["UI/UX Design", "Figma", "User Research", "Prototyping", "HTML/CSS", "Design Systems"],
+      "experience_years": 4,
+      "summary": "UX designer with 4 years creating user-centered designs. Strong in research and prototyping with technical skills."
+    },
+    {
+      "id": "c_des_002",
+      "name": "Ethan Moore",
+      "skills": ["Graphic Design", "Photoshop", "Illustrator", "Branding"],
+      "experience_years": 3,
+      "summary": "Graphic designer with 3 years experience. Strong in visual design but limited UX and user research experience."
+    },
+    {
+      "id": "c_des_003",
+      "name": "Ava Johnson",
+      "skills": ["HTML/CSS", "JavaScript", "React", "Figma"],
+      "experience_years": 3,
+      "summary": "Frontend developer with 3 years experience. Strong technical skills but limited UX design and user research background."
+    }
+  ],
+  "data": [
+    {
+      "id": "c_data_001",
+      "name": "William Anderson",
+      "skills": ["SQL", "Python", "Data Visualization", "Statistics", "Tableau", "Machine Learning"],
+      "experience_years": 3,
+      "summary": "Data analyst with 3 years analyzing data and creating dashboards. Strong in SQL, Python, and visualization."
+    },
+    {
+      "id": "c_data_002",
+      "name": "Emma Thomas",
+      "skills": ["Excel", "SQL", "Tableau"],
+      "experience_years": 2,
+      "summary": "Business analyst with 2 years experience. Strong in Excel and SQL but limited Python and statistics experience."
+    },
+    {
+      "id": "c_data_003",
+      "name": "James White",
+      "skills": ["Python", "Machine Learning", "PyTorch", "Statistics"],
+      "experience_years": 4,
+      "summary": "ML engineer with 4 years experience. Strong in ML but limited SQL and data visualization experience."
+    }
+  ],
+  "devops": [
+    {
+      "id": "c_devops_001",
+      "name": "Alexander Harris",
+      "skills": ["Linux", "Docker", "CI/CD", "Cloud Platforms", "Kubernetes", "AWS", "Terraform"],
+      "experience_years": 4,
+      "summary": "DevOps engineer with 4 years building infrastructure and automating deployments. Strong in containerization and cloud platforms."
+    },
+    {
+      "id": "c_devops_002",
+      "name": "Benjamin Clark",
+      "skills": ["Linux", "Docker", "Git", "Bash"],
+      "experience_years": 2,
+      "summary": "System administrator with 2 years experience. Strong in Linux but limited CI/CD and cloud experience."
+    },
+    {
+      "id": "c_devops_003",
+      "name": "Charlotte Lewis",
+      "skills": ["Python", "Git", "Django", "SQL"],
+      "experience_years": 3,
+      "summary": "Backend developer with 3 years experience. Strong in development but no DevOps or infrastructure background."
+    }
+  ]
+}

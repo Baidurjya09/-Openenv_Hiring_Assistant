@@ -1,0 +1,50 @@
+[
+  {
+    "id": "job_easy_001",
+    "title": "Junior Python Developer",
+    "required_skills": ["Python", "Git"],
+    "preferred_skills": ["Django", "REST APIs"],
+    "min_experience_years": 1,
+    "description": "We are looking for a junior Python developer with at least 1 year of experience. The candidate must know Python and Git. Knowledge of Django and REST APIs is a plus."
+  },
+  {
+    "id": "job_medium_001",
+    "title": "Full Stack Engineer",
+    "required_skills": ["JavaScript", "React", "Node.js", "SQL"],
+    "preferred_skills": ["TypeScript", "Docker", "AWS"],
+    "min_experience_years": 3,
+    "description": "We need a full stack engineer with strong JavaScript skills, experience with React on the frontend and Node.js on the backend, and solid SQL knowledge. TypeScript, Docker, and AWS experience are bonuses."
+  },
+  {
+    "id": "job_hard_001",
+    "title": "Senior ML Engineer",
+    "required_skills": ["Python", "PyTorch", "Machine Learning", "MLOps"],
+    "preferred_skills": ["Kubernetes", "Spark", "LLMs", "CUDA"],
+    "min_experience_years": 5,
+    "description": "Seeking a senior ML engineer with deep expertise in Python, PyTorch, and production ML systems. Must have MLOps experience. Kubernetes, Spark, LLM fine-tuning, and CUDA knowledge are highly valued."
+  },
+  {
+    "id": "job_management_001",
+    "title": "Product Manager",
+    "required_skills": ["Product Strategy", "Roadmap Planning", "Stakeholder Management"],
+    "preferred_skills": ["SQL", "Agile", "User Research"],
+    "min_experience_years": 3,
+    "description": "Product manager to define product vision, prioritize features, and work with engineering teams. Must have strong analytical and communication skills. Technical background is a plus."
+  },
+  {
+    "id": "job_marketing_001",
+    "title": "Marketing Manager",
+    "required_skills": ["Marketing Strategy", "Campaign Management", "Analytics"],
+    "preferred_skills": ["SEO", "Social Media", "Content Marketing"],
+    "min_experience_years": 3,
+    "description": "Marketing manager to develop and execute marketing campaigns, analyze performance, and drive growth. Must have strong analytical and creative skills."
+  },
+  {
+    "id": "job_business_001",
+    "title": "Business Analyst",
+    "required_skills": ["Excel", "SQL", "Data Analysis", "Business Requirements"],
+    "preferred_skills": ["Tableau", "PowerBI", "Python"],
+    "min_experience_years": 2,
+    "description": "Business analyst to analyze data, create reports, and support business decision-making. Must have strong analytical and communication skills."
+  }
+]

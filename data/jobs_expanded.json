@@ -1,0 +1,122 @@
+[
+  {
+    "id": "job_easy_001",
+    "title": "Junior Python Developer",
+    "required_skills": ["Python", "Git"],
+    "preferred_skills": ["Django", "REST APIs"],
+    "min_experience_years": 1,
+    "description": "We are looking for a junior Python developer with at least 1 year of experience. The candidate must know Python and Git. Knowledge of Django and REST APIs is a plus."
+  },
+  {
+    "id": "job_medium_001",
+    "title": "Full Stack Engineer",
+    "required_skills": ["JavaScript", "React", "Node.js", "SQL"],
+    "preferred_skills": ["TypeScript", "Docker", "AWS"],
+    "min_experience_years": 3,
+    "description": "We need a full stack engineer with strong JavaScript skills, experience with React on the frontend and Node.js on the backend, and solid SQL knowledge. TypeScript, Docker, and AWS experience are bonuses."
+  },
+  {
+    "id": "job_hard_001",
+    "title": "Senior ML Engineer",
+    "required_skills": ["Python", "PyTorch", "Machine Learning", "MLOps"],
+    "preferred_skills": ["Kubernetes", "Spark", "LLMs", "CUDA"],
+    "min_experience_years": 5,
+    "description": "Seeking a senior ML engineer with deep expertise in Python, PyTorch, and production ML systems. Must have MLOps experience. Kubernetes, Spark, LLM fine-tuning, and CUDA knowledge are highly valued."
+  },
+  {
+    "id": "job_pm_easy",
+    "title": "Associate Product Manager",
+    "required_skills": ["Product Strategy", "Communication"],
+    "preferred_skills": ["SQL", "Agile", "User Research"],
+    "min_experience_years": 1,
+    "description": "Entry-level product manager to assist in product development. Must have basic product strategy knowledge and strong communication skills."
+  },
+  {
+    "id": "job_pm_medium",
+    "title": "Product Manager",
+    "required_skills": ["Product Strategy", "Roadmap Planning", "Stakeholder Management", "Data Analysis"],
+    "preferred_skills": ["SQL", "Agile", "User Research", "A/B Testing"],
+    "min_experience_years": 3,
+    "description": "Product manager to define product vision, prioritize features, and work with engineering teams. Must have strong analytical and communication skills."
+  },
+  {
+    "id": "job_pm_hard",
+    "title": "Senior Product Manager",
+    "required_skills": ["Product Strategy", "Roadmap Planning", "Stakeholder Management", "Data Analysis", "Team Leadership"],
+    "preferred_skills": ["SQL", "Python", "Machine Learning", "Growth Hacking"],
+    "min_experience_years": 5,
+    "description": "Senior product manager to lead product initiatives, mentor junior PMs, and drive strategic decisions. Technical background preferred."
+  },
+  {
+    "id": "job_marketing_easy",
+    "title": "Marketing Coordinator",
+    "required_skills": ["Social Media", "Content Writing"],
+    "preferred_skills": ["SEO", "Email Marketing", "Canva"],
+    "min_experience_years": 1,
+    "description": "Entry-level marketing coordinator to manage social media and create content. Must be creative and detail-oriented."
+  },
+  {
+    "id": "job_marketing_medium",
+    "title": "Marketing Manager",
+    "required_skills": ["Marketing Strategy", "Campaign Management", "Analytics", "Communication"],
+    "preferred_skills": ["SEO", "Social Media", "Content Marketing", "Google Analytics"],
+    "min_experience_years": 3,
+    "description": "Marketing manager to develop and execute marketing campaigns, analyze performance, and drive growth."
+  },
+  {
+    "id": "job_marketing_hard",
+    "title": "Head of Marketing",
+    "required_skills": ["Marketing Strategy", "Campaign Management", "Analytics", "Team Leadership", "Budget Management"],
+    "preferred_skills": ["SEO", "Paid Advertising", "Marketing Automation", "CRM"],
+    "min_experience_years": 7,
+    "description": "Head of marketing to lead marketing team, develop strategy, and drive company growth. Must have proven track record of scaling marketing operations."
+  },
+  {
+    "id": "job_sales_medium",
+    "title": "Sales Manager",
+    "required_skills": ["Sales Strategy", "CRM", "Negotiation", "Pipeline Management"],
+    "preferred_skills": ["Salesforce", "B2B Sales", "Account Management", "Cold Calling"],
+    "min_experience_years": 4,
+    "description": "Sales manager to lead sales team, manage pipeline, and drive revenue growth. Must have strong negotiation and relationship-building skills."
+  },
+  {
+    "id": "job_hr_medium",
+    "title": "HR Manager",
+    "required_skills": ["Recruitment", "Employee Relations", "HR Policies", "Communication"],
+    "preferred_skills": ["HRIS", "Performance Management", "Compensation", "Training"],
+    "min_experience_years": 3,
+    "description": "HR manager to oversee recruitment, employee relations, and HR operations. Must have strong interpersonal and organizational skills."
+  },
+  {
+    "id": "job_finance_medium",
+    "title": "Financial Analyst",
+    "required_skills": ["Financial Modeling", "Excel", "Data Analysis", "Accounting"],
+    "preferred_skills": ["SQL", "Python", "Tableau", "FP&A"],
+    "min_experience_years": 2,
+    "description": "Financial analyst to perform financial modeling, analysis, and reporting. Must have strong Excel and analytical skills."
+  },
+  {
+    "id": "job_design_medium",
+    "title": "UX Designer",
+    "required_skills": ["UI/UX Design", "Figma", "User Research", "Prototyping"],
+    "preferred_skills": ["HTML/CSS", "JavaScript", "Animation", "Design Systems"],
+    "min_experience_years": 3,
+    "description": "UX designer to create user-centered designs, conduct research, and collaborate with product and engineering teams."
+  },
+  {
+    "id": "job_data_medium",
+    "title": "Data Analyst",
+    "required_skills": ["SQL", "Python", "Data Visualization", "Statistics"],
+    "preferred_skills": ["Tableau", "R", "Machine Learning", "ETL"],
+    "min_experience_years": 2,
+    "description": "Data analyst to analyze data, create dashboards, and provide insights to drive business decisions."
+  },
+  {
+    "id": "job_devops_medium",
+    "title": "DevOps Engineer",
+    "required_skills": ["Linux", "Docker", "CI/CD", "Cloud Platforms"],
+    "preferred_skills": ["Kubernetes", "Terraform", "AWS", "Monitoring"],
+    "min_experience_years": 3,
+    "description": "DevOps engineer to build and maintain infrastructure, automate deployments, and ensure system reliability."
+  }
+]
