@@ -11,7 +11,8 @@ class HiringGrader(BaseGrader):
       - Precision  = correct_selections / len(selected)   (penalizes false positives)
       - Recall     = correct_selections / len(correct)    (penalizes missed candidates)
       - Score      = F1 = 2 * precision * recall / (precision + recall)
-      - Edge cases: empty selection → 0.0, no correct candidates → 1.0 if nothing selected
+      - Edge cases: empty selection → near 0, no correct candidates → near 1 if nothing selected
+      - Scores are clamped to (0.0001, 0.9999) to satisfy validator requirements
     """
 
     def grade(self, selected: List[str], correct: List[str]) -> Reward:
@@ -20,7 +21,7 @@ class HiringGrader(BaseGrader):
 
         # Edge case: no correct answers defined
         if not correct_set:
-            score = 1.0 if not selected_set else 0.0
+            score = 0.9999 if not selected_set else 0.0001
             return Reward(
                 score=score,
                 correct_selections=0,
@@ -32,7 +33,7 @@ class HiringGrader(BaseGrader):
         # Edge case: agent selected nothing
         if not selected_set:
             return Reward(
-                score=0.0,
+                score=0.0001,
                 correct_selections=0,
                 total_correct=len(correct_set),
                 false_positives=0,
@@ -46,11 +47,12 @@ class HiringGrader(BaseGrader):
         recall = true_positives / len(correct_set)
 
         if precision + recall == 0:
-            f1 = 0.0
+            f1 = 0.0001
         else:
             f1 = 2 * precision * recall / (precision + recall)
 
-        score = round(f1, 4)
+        # Clamp score to strictly between 0 and 1
+        score = max(0.0001, min(0.9999, round(f1, 4)))
 
         if score == 1.0:
             feedback = "Perfect selection. All correct candidates identified with no false positives."
