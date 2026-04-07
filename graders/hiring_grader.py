@@ -54,7 +54,7 @@ class HiringGrader(BaseGrader):
         # Clamp score to strictly between 0 and 1
         score = max(0.0001, min(0.9999, round(f1, 4)))
 
-        if score == 1.0:
+        if score >= 0.9999:
             feedback = "Perfect selection. All correct candidates identified with no false positives."
         elif true_positives == len(correct_set):
             feedback = f"All correct candidates found but {false_positives} false positive(s) included."
