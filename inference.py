@@ -170,7 +170,7 @@ def run_task(task_name: str, difficulty: str) -> dict:
         # Emit [STEP] line
         error_str = error if error else "null"
         done_str = "true" if done else "false"
-        print(f"[STEP]  step=1 action={action_str} reward={reward:.2f} done={done_str} error={error_str}")
+        print(f"[STEP]  step=1 action={action_str} reward={reward:.4f} done={done_str} error={error_str}")
         
         # Calculate final score (same as reward for single-step)
         score = reward
@@ -189,8 +189,8 @@ def run_task(task_name: str, difficulty: str) -> dict:
         return {
             "success": False,
             "steps": 0,
-            "score": 0.0,
-            "rewards": [0.0],
+            "score": 0.0001,  # Use 0.0001 instead of 0.0 to stay in valid range
+            "rewards": [0.0001],  # Use 0.0001 instead of 0.0 to stay in valid range
             "error": error
         }
 
@@ -214,21 +214,21 @@ def main():
         
         # Emit [END] line
         success_str = "true" if result["success"] else "false"
-        rewards_str = ",".join([f"{r:.2f}" for r in result["rewards"]])
-        print(f"[END]   success={success_str} steps={result['steps']} score={result['score']:.2f} rewards={rewards_str}")
+        rewards_str = ",".join([f"{r:.4f}" for r in result["rewards"]])
+        print(f"[END]   success={success_str} steps={result['steps']} score={result['score']:.4f} rewards={rewards_str}")
         
         all_scores.append(result["score"])
     
     # Print summary to stderr (not part of required stdout format)
     avg_score = sum(all_scores) / len(all_scores) if all_scores else 0.0
     print(f"\n=== Summary ===", file=sys.stderr)
-    print(f"Easy:       {all_scores[0]:.2f}", file=sys.stderr)
-    print(f"Medium:     {all_scores[1]:.2f}", file=sys.stderr)
-    print(f"Hard:       {all_scores[2]:.2f}", file=sys.stderr)
-    print(f"Management: {all_scores[3]:.2f}", file=sys.stderr)
-    print(f"Marketing:  {all_scores[4]:.2f}", file=sys.stderr)
-    print(f"Business:   {all_scores[5]:.2f}", file=sys.stderr)
-    print(f"Average:    {avg_score:.2f}", file=sys.stderr)
+    print(f"Easy:       {all_scores[0]:.4f}", file=sys.stderr)
+    print(f"Medium:     {all_scores[1]:.4f}", file=sys.stderr)
+    print(f"Hard:       {all_scores[2]:.4f}", file=sys.stderr)
+    print(f"Management: {all_scores[3]:.4f}", file=sys.stderr)
+    print(f"Marketing:  {all_scores[4]:.4f}", file=sys.stderr)
+    print(f"Business:   {all_scores[5]:.4f}", file=sys.stderr)
+    print(f"Average:    {avg_score:.4f}", file=sys.stderr)
     
     return avg_score
 
