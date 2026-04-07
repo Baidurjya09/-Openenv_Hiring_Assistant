@@ -154,7 +154,18 @@ hiring-openenv/
 
 ## Setup & Running
 
-### Local
+### For OpenEnv Validator
+
+The validator automatically injects these environment variables:
+- `API_KEY` — Authentication key for the LiteLLM proxy
+- `API_BASE_URL` — Base URL for the LiteLLM proxy
+- `MODEL_NAME` — Model to use for inference
+
+Your code must use these variables to ensure API calls are tracked.
+
+### Local Testing
+
+For local development and testing, you can use `HF_TOKEN` instead of `API_KEY`:
 
 ```bash
 cd hiring-openenv

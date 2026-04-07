@@ -8,9 +8,9 @@ MANDATORY STDOUT FORMAT:
 [END]   success=<true|false> steps=<n> score=<score> rewards=<r1,r2,...,rn>
 
 Environment variables:
-  API_BASE_URL  - OpenAI-compatible API base URL
+  API_BASE_URL  - OpenAI-compatible API base URL (provided by validator)
+  API_KEY       - API key for authentication (provided by validator)
   MODEL_NAME    - Model to use
-  HF_TOKEN      - API key / HuggingFace token
 """
 
 import json
@@ -32,15 +32,17 @@ from models.schemas import Action
 # Configuration
 # ------------------------------------------------------------------
 
+# Use API_KEY (provided by validator) with fallback to HF_TOKEN for local testing
+API_KEY = os.environ.get("API_KEY") or os.environ.get("HF_TOKEN", "")
 API_BASE_URL = os.environ.get("API_BASE_URL", "https://router.huggingface.co/v1")
 MODEL_NAME = os.environ.get("MODEL_NAME", "gpt-4o-mini")
-HF_TOKEN = os.environ.get("HF_TOKEN", "")
 BENCHMARK = "ai-hiring-assistant"
 
-if not HF_TOKEN:
-    print("WARNING: HF_TOKEN is not set. Requests may fail if authentication is required.", file=sys.stderr)
+if not API_KEY:
+    print("WARNING: API_KEY is not set. Requests may fail if authentication is required.", file=sys.stderr)
 
-client = OpenAI(api_key=HF_TOKEN, base_url=API_BASE_URL)
+# Initialize OpenAI client with validator-provided credentials
+client = OpenAI(api_key=API_KEY, base_url=API_BASE_URL)
 
 
 # ------------------------------------------------------------------
